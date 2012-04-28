@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>String/Code Generator</title>
+	<script type="text/javascript" src="password.js"></script>
+	<style type = "text/css">
+		
+		#code{
+			height:200px;
+			width:400px;
+			border:0;
+		}
+		#left{
+			float: left;
+			
+		}
+
+		.wrapper{
+    			margin:auto;
+				width:50%;
+				
+				width:400px;
+		}
+	</style>
+<body>
+	<div id="complete">
+		<div class = "wrapper">
+			<div id = "left">
+				<label>	<input type = "radio" name="typeButton" id = "l_values" checked/>
+				Letters Only </label><br>
+				<label>	<input type = "radio" name="typeButton" id = "n_values"/>
+				Numbers Only </label><br>
+				<label>	<input type = "radio" name="typeButton" id = "ln_values"/>
+				Letters and Numbers </label><br>
+				<label>	<input type = "radio" name="typeButton" id = "lns_values"/>
+				Letters Numbers Symbols </label><br>
+			</div>
+
+			<div id = "right">
+				<label>Length : <input type="text" id="length"/> </label><br>
+				<button id = "button" type = "button" onclick="check()">Generate</button>
+			</div>
+		
+			<br>	
+			<br>
+			<textarea rows="5" cols="30" id="code"></textarea>
+		</div>
+	</div>
+</head>
+
+	
+</body>
+</html>
