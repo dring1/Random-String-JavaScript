@@ -66,11 +66,3 @@ function randomString()
 	}
 	document.getElementById("code").value = randomstring;
 }
-function clear()
-{
-	var dom = document.getElementById("length");
-	if(dom.value != "" && !isNaN(dom.value))
-	{
-		
-	}
-}
